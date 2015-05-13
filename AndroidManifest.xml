@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liyu.itester"
+    android:versionCode="10"
+    android:versionName="5.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".FunctionApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize|locale"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivityWiperReceiver$MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+             >
+        </activity>
+
+        <receiver
+            android:name=".MainActivityWiperReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".HwActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_hw"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".MacActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mac"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".BatActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bat"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".ImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_image"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".GsensorActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_gsensor"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".BrightnessActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_brightness"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".RgbActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_rgb"
+            android:launchMode="singleTop"
+            
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".MTActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_multitouch"
+            android:launchMode="singleTop"
+            
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".PointerLocation"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_drawing"
+            android:launchMode="singleTop"
+            
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".WifiActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_wifi"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".BtActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bt"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".SDActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_sd"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".MP3Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mp3"
+            android:launchMode="singleTop"
+            >
+        </activity>
+        <activity
+            android:name=".MP4Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mp4"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".RecorderActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_recorder"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".CameraActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_camera"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".LsensorActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_lsensor"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".MobileNetActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mobile_net"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".VibrateActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_vibrate"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".FlashlightActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_flashlight"
+            android:launchMode="singleTop"
+            >
+        </activity>
+        <activity
+            android:name=".compass.CompassActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_compass"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".KeyActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_key"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".GyroscopeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_gyroscope"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name=".ProximityActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_proximity"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".GPSActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_gps"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_results"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".TouchActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_drawing"
+            android:launchMode="singleTop"
+            
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".OTGActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_otg"
+            android:launchMode="singleTop"
+             >
+        </activity>
+        <activity
+            android:name=".EthernetActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_ethernet" 
+            android:launchMode="singleTop"
+            >
+        </activity>
+        <activity
+            android:name=".FMActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_fm" 
+            android:launchMode="singleTop"
+            >
+        </activity>
+    </application>
+
+</manifest>

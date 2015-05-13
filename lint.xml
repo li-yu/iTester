@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/liyu/itester/gyro/TouchSurfaceView.java" />
+    </issue>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/liyu/itester/SDActivity.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/liyu/itester/GyroscopeActivity.java" />
+        <ignore path="src/com/liyu/itester/LsensorActivity.java" />
+        <ignore path="src/com/liyu/itester/WifiActivity.java" />
+    </issue>
+</lint>

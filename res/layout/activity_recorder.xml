@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.liyu.itester.soundrecorder.VUMeter
+                    android:id="@+id/uvMeter"
+                    android:layout_width="150px"
+                    android:layout_height="60px"
+                    android:layout_centerInParent="true" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/uvMeter"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/play" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageButton_play"
+                    android:layout_toLeftOf="@+id/imageButton_play"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/record" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageButton_play"
+                    android:layout_toRightOf="@+id/imageButton_play"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/stop" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/button_fail"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_2"
+            android:textSize="24sp"
+            android:text="Fail" />
+
+        <Button
+            android:id="@+id/button_pass"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_3"
+            android:textSize="24sp"
+            android:text="Pass" />
+    </LinearLayout>
+
+</RelativeLayout>
