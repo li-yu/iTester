@@ -13,7 +13,7 @@ Android平板手机设备工厂端测试工具
 * 详细功能见下面的截图
 
 ##截图
-
+<img src="https://raw.githubusercontent.com/li-yu/iTester/master/screenshot.png" alt="Drawing" width="400px" />
 ##说明
 本测试工具为本人练习作品，编码水平有限，整体框架设计不尽人意，问题和bug欢迎指正，感谢！
 
