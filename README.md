@@ -10,7 +10,7 @@ Android平板手机设备工厂端测试工具
 * 传感器的测试：Gsensor、Lightsensor、Compass、Gyro等等
 * TP触摸检测、WiFi搜索、蓝牙、按键等等功能测试
 * 通过配置外部config档可以自定义测试项目以及顺序
-* 详细功能请[下载APK](liyuyu.cn/myapps/iTester_v5.1.2.apk)
+* 详细功能请[下载APK](http://liyuyu.cn/myapps/iTester_v5.1.2.apk)
 
 ##截图
 <img src="https://raw.githubusercontent.com/li-yu/iTester/master/screenshot.png" alt="Drawing" width="400px" />
